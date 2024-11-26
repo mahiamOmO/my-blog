@@ -24,6 +24,52 @@ const Logo = (
   </div>
 );
 
+const Head = () => {
+  const { title } = useConfig();
+  const { route } = useRouter();
+
+  const pageTitle = route === "/" || !title ? "CS Hub" : `${title} | CS Hub`;
+  const socialImage = "";
+
+  return (
+    <>
+      <meta name="msapplication-TileColor" content="#fff" />
+      <meta name="theme-color" content="#fff" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta httpEquiv="Content-Language" content="en" />
+
+      {/* Icons */}
+      <link rel="icon" href="/favicon.jpg" type="image/png" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+      {/* Description */}
+      <meta
+        name="description"
+        content="Empowering the next generation of computer scientists with cutting-edge articles, tutorials, and resources."
+      />
+      <meta
+        name="og:description"
+        content="Empowering the next generation of computer scientists with cutting-edge articles, tutorials, and resources."
+      />
+
+      {/* OpenGraph */}
+      <meta name="og:image" content={socialImage} />
+      <meta name="og:title" content={pageTitle} />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={socialImage} />
+      <meta name="twitter:site:domain" content="http://localhost:3000" />
+      <meta name="twitter:url" content="http://localhost:3000" />
+
+      {/* Apple */}
+      <meta name="apple-mobile-web-app-title" content="cs-hub" />
+    </>
+  );
+};
+
 const currentYear = new Date().getFullYear();
 const Footer = (
   <footer className="text-gray-300">
@@ -235,52 +281,6 @@ const Footer = (
     </div>
   </footer>
 );
-
-const Head = () => {
-  const { title } = useConfig();
-  const { route } = useRouter();
-
-  const pageTitle = route === "/" || !title ? "CS Hub" : `${title} | CS Hub`;
-  const socialImage = "";
-
-  return (
-    <>
-      <meta name="msapplication-TileColor" content="#fff" />
-      <meta name="theme-color" content="#fff" />
-
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta httpEquiv="Content-Language" content="en" />
-
-      {/* Icons */}
-      <link rel="icon" href="/favicon.jpg" type="image/png" />
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-
-      {/* Description */}
-      <meta
-        name="description"
-        content="Empowering the next generation of computer scientists with cutting-edge articles, tutorials, and resources."
-      />
-      <meta
-        name="og:description"
-        content="Empowering the next generation of computer scientists with cutting-edge articles, tutorials, and resources."
-      />
-
-      {/* OpenGraph */}
-      <meta name="og:image" content={socialImage} />
-      <meta name="og:title" content={pageTitle} />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content={socialImage} />
-      <meta name="twitter:site:domain" content="http://localhost:3000" />
-      <meta name="twitter:url" content="http://localhost:3000" />
-
-      {/* Apple */}
-      <meta name="apple-mobile-web-app-title" content="cs-hub" />
-    </>
-  );
-};
 
 const config: DocsThemeConfig = {
   logo: Logo,
