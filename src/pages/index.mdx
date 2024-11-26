@@ -1,0 +1,22 @@
+---
+title: Thread v2.0.5
+---
+
+export function SmoothScroll({ scrollTo, children, ...props }) {
+  return (
+    <button
+      {...props}
+      onClick={() =>
+        document
+          .getElementById(scrollTo)
+          ?.scrollIntoView({ behavior: "smooth" })
+      }
+    >
+      {children}
+    </button>
+  );
+}
+
+<div className="flex-col flex">
+
+</div>
