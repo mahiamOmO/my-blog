@@ -1,3 +1,13 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "root": true,
+  "extends": ["next/core-web-vitals", "plugin:mdx/recommended"],
+  "settings": {
+    "mdx/code-blocks": true
+  },
+  "overrides": [
+    {
+      "files": ["*.md", "*.mdx"],
+      "parser": "eslint-mdx"
+    }
+  ]
 }

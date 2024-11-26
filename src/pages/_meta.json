@@ -1,0 +1,56 @@
+{
+  "*": {
+    "type": "page"
+  },
+  "index": {
+    "title": "cs-resources",
+    "display": "hidden",
+    "theme": {
+      "layout": "full",
+      "timestamp": false
+    }
+  },
+  "frontend": {
+    "title": "Frontend",
+    "type": "menu",
+    "items": {
+      "react": {
+        "title": "React",
+        "href": "/frontend/react"
+      },
+      "vue": {
+        "title": "Vue",
+        "href": "/frontend/vue"
+      },
+      "svelte": {
+        "title": "Svelte",
+        "href": "/frontend/svelte"
+      }
+    }
+  },
+  "backend": {
+    "title": "Backend",
+    "type": "menu",
+    "items": {
+      "nodejs": {
+        "title": "Nodejs",
+        "href": "/backend/nodejs"
+      },
+      "expressjs": {
+        "title": "Expressjs",
+        "href": "/backend/expressjs"
+      }
+    }
+  },
+  "about": {
+    "title": "About",
+    "theme": {
+      "timestamp": false
+    }
+  },
+  "404": {
+    "theme": {
+      "timestamp": false
+    }
+  }
+}
