@@ -72,11 +72,13 @@ const Head = () => {
 
 const currentYear = new Date().getFullYear();
 const Footer = (
-  <footer className="text-gray-300">
+  <footer className="text-gray-700 dark:text-gray-300">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-white">CS Hub</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+            CS Hub
+          </h2>
           <p className="text-sm">
             Empowering the next generation of computer scientists with
             cutting-edge articles, tutorials, and resources.
@@ -86,7 +88,7 @@ const Footer = (
               href="https://github.com/programming-for-career/cs-resources"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               <FaGithub className="w-6 h-6" />
               <span className="sr-only">GitHub</span>
@@ -95,7 +97,7 @@ const Footer = (
               href="https://github.com/programming-for-career/cs-resources"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               <FaTwitter className="w-6 h-6" />
               <span className="sr-only">Twitter</span>
@@ -104,7 +106,7 @@ const Footer = (
               href="https://github.com/programming-for-career/cs-resources"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               <FaLinkedin className="w-6 h-6" />
               <span className="sr-only">LinkedIn</span>
@@ -113,7 +115,7 @@ const Footer = (
               href="https://github.com/programming-for-career/cs-resources"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
             >
               <FaRss className="w-6 h-6" />
               <span className="sr-only">RSS Feed</span>
@@ -122,12 +124,14 @@ const Footer = (
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">Explore</h3>
+          <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
+            Explore
+          </h3>
           <ul className="space-y-2">
             <li>
               <Link
                 href="/articles"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 All Articles
               </Link>
@@ -135,7 +139,7 @@ const Footer = (
             <li>
               <Link
                 href="/topics"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Topics
               </Link>
@@ -143,7 +147,7 @@ const Footer = (
             <li>
               <Link
                 href="/tutorials"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Tutorials
               </Link>
@@ -151,7 +155,7 @@ const Footer = (
             <li>
               <Link
                 href="/resources"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Resources
               </Link>
@@ -159,7 +163,7 @@ const Footer = (
             <li>
               <Link
                 href="/events"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Events
               </Link>
@@ -168,14 +172,14 @@ const Footer = (
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">
+          <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
             Popular Topics
           </h3>
           <ul className="space-y-2">
             <li>
               <Link
                 href="/topic/algorithms"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Algorithms
               </Link>
@@ -183,7 +187,7 @@ const Footer = (
             <li>
               <Link
                 href="/topic/data-structures"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Data Structures
               </Link>
@@ -191,7 +195,7 @@ const Footer = (
             <li>
               <Link
                 href="/topic/machine-learning"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Machine Learning
               </Link>
@@ -199,7 +203,7 @@ const Footer = (
             <li>
               <Link
                 href="/topic/web-development"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Web Development
               </Link>
@@ -207,7 +211,7 @@ const Footer = (
             <li>
               <Link
                 href="/topic/cybersecurity"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Cybersecurity
               </Link>
@@ -216,7 +220,7 @@ const Footer = (
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-white">
+          <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
             Stay Updated
           </h3>
           <p className="mb-4 text-sm">
@@ -226,7 +230,7 @@ const Footer = (
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 text-gray-900 bg-gray-200 dark:bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
             <button
@@ -239,14 +243,16 @@ const Footer = (
         </div>
       </div>
 
-      <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center">
-        <p className="text-sm">© {currentYear} CS Resources Hub. All rights reserved.</p>
+      <div className="mt-8 pt-8 border-t border-gray-300 dark:border-gray-800 flex flex-col sm:flex-row justify-between items-center">
+        <p className="text-sm">
+          © {new Date().getFullYear()} CS Resources Hub. All rights reserved.
+        </p>
         <nav className="mt-4 sm:mt-0">
           <ul className="flex space-x-4 text-sm">
             <li>
               <Link
                 href="/about"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 About
               </Link>
@@ -254,7 +260,7 @@ const Footer = (
             <li>
               <Link
                 href="/contact"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Contact
               </Link>
@@ -262,7 +268,7 @@ const Footer = (
             <li>
               <Link
                 href="/privacy"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Privacy Policy
               </Link>
@@ -270,7 +276,7 @@ const Footer = (
             <li>
               <Link
                 href="/terms"
-                className="hover:text-white transition-colors"
+                className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 Terms of Use
               </Link>
