@@ -17,6 +17,66 @@ export function SmoothScroll({ scrollTo, children, ...props }) {
   );
 }
 
-<div className="flex-col flex">
+import { AnimatedTitle } from "../components/AnimatedTitle";
+import { AnimatedCard } from "../components/AnimatedCard";
+import { TypewriterEffect } from "../components/TypewriterEffect";
+import { FloatingIcons } from "../components/FloatingIcons";
 
+<FloatingIcons />
+
+<AnimatedTitle>Welcome to CS Resources Hub</AnimatedTitle>
+
+<TypewriterEffect text="Discover. Learn. Excel in Computer Science." />
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+  <AnimatedCard
+    title="Algorithms & Data Structures"
+    description="Master the fundamentals of computer science with our comprehensive guides and tutorials."
+    link="/resources/algorithms"
+  />
+  <AnimatedCard
+    title="Web Development"
+    description="Learn modern web technologies and frameworks to build responsive and dynamic websites."
+    link="/resources/web-development"
+  />
+  <AnimatedCard
+    title="Machine Learning"
+    description="Dive into the world of AI and machine learning with hands-on projects and tutorials."
+    link="/resources/machine-learning"
+  />
+  <AnimatedCard
+    title="Cybersecurity"
+    description="Explore the latest in cybersecurity practices and tools to protect digital assets."
+    link="/resources/cybersecurity"
+  />
+  <AnimatedCard
+    title="Mobile App Development"
+    description="Create cutting-edge mobile applications for iOS and Android platforms."
+    link="/resources/mobile-development"
+  />
+  <AnimatedCard
+    title="Cloud Computing"
+    description="Harness the power of cloud technologies with our guides on AWS, Azure, and Google Cloud."
+    link="/resources/cloud-computing"
+  />
 </div>
+
+## Why Choose CS Resources Hub?
+
+Our platform offers a curated collection of high-quality resources to help you excel in your computer science journey:
+
+- **Comprehensive Coverage**: From beginner to advanced topics, we've got you covered.
+- **Up-to-date Content**: Stay ahead with the latest trends and technologies in the fast-paced world of CS.
+- **Interactive Learning**: Engage with our community, participate in coding challenges, and apply your knowledge in real-world projects.
+- **Expert-vetted Resources**: All our content is carefully selected and reviewed by industry professionals.
+
+## Get Started Today!
+
+Whether you're a student, a professional looking to upskill, or an enthusiast exploring the vast world of computer science, CS Resources Hub is your go-to destination for quality learning materials.
+
+
+export default function HomePage({ children }) {
+  return (
+    <div className="max-w-4xl mx-auto px-4 py-12 relative">{children}</div>
+  );
+}
