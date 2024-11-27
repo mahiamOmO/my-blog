@@ -240,7 +240,7 @@ const Footer = (
       </div>
 
       <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center">
-        <p className="text-sm">© {currentYear} CS Hub. All rights reserved.</p>
+        <p className="text-sm">© {currentYear} CS Resources Hub. All rights reserved.</p>
         <nav className="mt-4 sm:mt-0">
           <ul className="flex space-x-4 text-sm">
             <li>

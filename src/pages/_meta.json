@@ -42,6 +42,50 @@
       }
     }
   },
+  "devops": {
+    "title": "Devops",
+    "type": "menu",
+    "items": {
+      "git": {
+        "title": "Git & GitHub",
+        "href": "/devops/git&github"
+      },
+      "linux": {
+        "title": "Linux",
+        "href": "/devops/linux"
+      }
+    }
+  },
+  "resources": {
+    "title": "Resources",
+    "type": "menu",
+    "items": {
+      "algorithms": {
+        "title": "Algorithms & Data Structures",
+        "href": "/resources/algorithms"
+      },
+      "web-development": {
+        "title": "Web Development",
+        "href": "/resources/web-development"
+      },
+      "machine-learning": {
+        "title": "Machine Learning",
+        "href": "/resources/machine-learning"
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity",
+        "href": "/resources/cybersecurity"
+      },
+      "mobile-development": {
+        "title": "Mobile App Development",
+        "href": "/resources/mobile-development"
+      },
+      "cloud-computing": {
+        "title": "Cloud Computing",
+        "href": "/resources/cloud-computing"
+      }
+    }
+  },
   "about": {
     "title": "About",
     "theme": {
