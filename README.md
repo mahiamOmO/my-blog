@@ -91,8 +91,6 @@ The application will be available at [http://localhost:3000](http://localhost:30
 ```txt
 cs-resources/
 📦cs-resources
- ┣ 📂.github
- ┃ ┗ 📂ISSUE_TEMPLATE
  ┣ 📂public
  ┃ ┗ 📜favicon.jpg
  ┣ 📂src
@@ -120,11 +118,6 @@ cs-resources/
  ┣ 📜.eslintrc.json
  ┣ 📜.gitignore
  ┣ 📜.prettierignore
- ┣ 📜CODE_OF_CONDUCT.md
- ┣ 📜CONTRIBUTING.md
- ┣ 📜LICENSE
- ┣ 📜README.md
- ┣ 📜SECURITY.md
  ┣ 📜next-env.d.ts
  ┣ 📜next-sitemap.config.js
  ┣ 📜next.config.js
@@ -145,6 +138,7 @@ cs-resources/
 1. Add a new MDX file to the appropriate directory in the `resources/` folder.
 2. Include the necessary metadata (e.g., title, description, tags) in the MDX frontmatter.
 3. Write the content using Markdown and React components.
+4. Don't upload images directly to the repository. Instead, host them externally and link to them in the content.
 
 ### Updating Existing Content
 
@@ -185,6 +179,8 @@ We welcome contributions! Please follow the guidelines below.
 <a href="https://github.com/programming-for-career/cs-resources/graphs/contributors">
    <img src="https://contrib.rocks/image?repo=programming-for-career/cs-resources" />
 </a>
+
+View All Contributors? [Click Here](./CONTRIBUTING.md)
 
 ### Content Contributions
 
