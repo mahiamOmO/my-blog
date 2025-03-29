@@ -92,6 +92,14 @@
       "timestamp": false
     }
   },
+  "momo": {
+    "title": "momo",
+    "theme": {
+      "timestamp": false
+    }
+  },
+
+
   "404": {
     "theme": {
       "timestamp": false
